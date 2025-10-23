@@ -13,16 +13,16 @@ export default function MainCategories() {
             </div>
 
             <div className="mt-5 flex justify-evenly mb-10">
-                <Link to="/" className="bg-[#202FF8] border-2 border-transparent px-12 py-2 rounded-[15px] hover:bg-[#161616] hover:border-[#202FF8] text-white transition-colors">Run</Link>
-                <Link to="/" className="bg-[#202FF8] border-2 border-transparent px-12 py-2 rounded-[15px] hover:bg-[#161616] hover:border-[#202FF8] text-white transition-colors">Music</Link>
-                <Link to="/" className="bg-[#202FF8] border-2 border-transparent px-12 py-2 rounded-[15px] hover:bg-[#161616] hover:border-[#202FF8] text-white transition-colors">Theater</Link>
-                <Link to="/" className="bg-[#202FF8] border-2 border-transparent px-12 py-2 rounded-[15px] hover:bg-[#161616] hover:border-[#202FF8] text-white transition-colors">Nature</Link>
-                <Link to="/" className="bg-[#202FF8] border-2 border-transparent px-12 py-2 rounded-[15px] hover:bg-[#161616] hover:border-[#202FF8] text-white transition-colors">Festive</Link>
-                <Link to="/" className="bg-[#202FF8] border-2 border-transparent px-12 py-2 rounded-[15px] hover:bg-[#161616] hover:border-[#202FF8] text-white transition-colors">Food</Link>
-                <Link to="/" className="bg-[#202FF8] border-2 border-transparent px-12 py-2 rounded-[15px] hover:bg-[#161616] hover:border-[#202FF8] text-white transition-colors">Food</Link>
-                <Link to="/" className="bg-[#202FF8] border-2 border-transparent px-12 py-2 rounded-[15px] hover:bg-[#161616] hover:border-[#202FF8] text-white transition-colors">Food</Link>
-                <Link to="/" className="bg-[#202FF8] border-2 border-transparent px-12 py-2 rounded-[15px] hover:bg-[#161616] hover:border-[#202FF8] text-white transition-colors">Food</Link>
-                <Link to="/" className="bg-[#202FF8] border-2 border-transparent px-12 py-2 rounded-[15px] hover:bg-[#161616] hover:border-[#202FF8] text-white transition-colors">Food</Link>
+                <Link to="/category" className="bg-[#202FF8] border-2 border-transparent px-12 py-2 rounded-[15px] hover:bg-[#161616] hover:border-[#202FF8] text-white transition-colors">Run</Link>
+                <Link to="/category" className="bg-[#202FF8] border-2 border-transparent px-12 py-2 rounded-[15px] hover:bg-[#161616] hover:border-[#202FF8] text-white transition-colors">Music</Link>
+                <Link to="/category" className="bg-[#202FF8] border-2 border-transparent px-12 py-2 rounded-[15px] hover:bg-[#161616] hover:border-[#202FF8] text-white transition-colors">Theater</Link>
+                <Link to="/category" className="bg-[#202FF8] border-2 border-transparent px-12 py-2 rounded-[15px] hover:bg-[#161616] hover:border-[#202FF8] text-white transition-colors">Nature</Link>
+                <Link to="/category" className="bg-[#202FF8] border-2 border-transparent px-12 py-2 rounded-[15px] hover:bg-[#161616] hover:border-[#202FF8] text-white transition-colors">Festive</Link>
+                <Link to="/category" className="bg-[#202FF8] border-2 border-transparent px-12 py-2 rounded-[15px] hover:bg-[#161616] hover:border-[#202FF8] text-white transition-colors">Food</Link>
+                <Link to="/category" className="bg-[#202FF8] border-2 border-transparent px-12 py-2 rounded-[15px] hover:bg-[#161616] hover:border-[#202FF8] text-white transition-colors">Food</Link>
+                <Link to="/category" className="bg-[#202FF8] border-2 border-transparent px-12 py-2 rounded-[15px] hover:bg-[#161616] hover:border-[#202FF8] text-white transition-colors">Food</Link>
+                <Link to="/category" className="bg-[#202FF8] border-2 border-transparent px-12 py-2 rounded-[15px] hover:bg-[#161616] hover:border-[#202FF8] text-white transition-colors">Food</Link>
+                <Link to="/category" className="bg-[#202FF8] border-2 border-transparent px-12 py-2 rounded-[15px] hover:bg-[#161616] hover:border-[#202FF8] text-white transition-colors">Food</Link>
             </div>
         </>
     )
