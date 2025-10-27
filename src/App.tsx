@@ -4,7 +4,7 @@ import Homepage from './pages/Homepage';
 import CategoryPage from './pages/CategoryPage';
 import EventDetailsPage from './pages/EventDetailsPage';
 import MyTickets from './pages/MyTickets';
-
+import CalendarPage from './pages/CalendarPage';
 function App() {
   return (
     <>
@@ -14,6 +14,7 @@ function App() {
           <Route path="/category" element={<CategoryPage />} />
           <Route path="/eventDetails" element={<EventDetailsPage />} />
           <Route path="/myTickets" element={<MyTickets />} />
+          <Route path="/calendar" element={<CalendarPage />} />
         </Routes>
       </Router>
     </>

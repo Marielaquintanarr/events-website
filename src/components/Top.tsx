@@ -7,10 +7,10 @@ export default function Top() {
         <>
             <div className="flex justify-between items-center">
                 <div>
-                    <p className="text-xl font-thin">Your Location</p>
+                    <p className="text-sm font-thin">Your Location</p>
                     <div className="flex items-center gap-3 mt-2">
                         <img className="w-5 h-6" src={icon} />
-                        <p className="text-3xl">Guadalajara</p>
+                        <p className="text-xl">Guadalajara</p>
                         <img src={chevron} />
                     </div>
                 </div>
