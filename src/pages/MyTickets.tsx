@@ -2,6 +2,7 @@ import Top from "../components/top";
 import SearchBar from "../components/SearchBar";
 import Ticket from "../components/Ticket";
 import Footer from "../components/Footer";
+import TicketButton from "../components/TicketButton";
 
 export default function MyTickets() {
     return (
@@ -11,10 +12,11 @@ export default function MyTickets() {
                 <SearchBar search="Tickets" />
                 <h1 className="text-4xl pt-10">My Events</h1>
                 <div className="mt-10">
-                    <Ticket />
-                    <Ticket />
-                    <Ticket />
-                    <Ticket />
+                    <Ticket ButtonType={TicketButton} />
+                    <Ticket ButtonType={TicketButton} />
+                    <Ticket ButtonType={TicketButton} />
+                    <Ticket ButtonType={TicketButton} />
+                    <Ticket ButtonType={TicketButton} />
                 </div>
                 <Footer />
             </div>
