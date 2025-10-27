@@ -5,7 +5,7 @@ import event from "../assets/event.png";
 
 export default function EventSlide() {
     return (
-        <div className="flex justify-between items-center p-4 bg-background transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] cursor-pointer border-b-2 border-[#282827] mb-5">
+        <Link to="/eventDetails" className="flex justify-between items-center p-4 bg-background transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] cursor-pointer border-b-2 border-[#282827] mb-5">
             <div className="flex justify-center items-center gap-4">
                 <img 
                     className="w-30 h-30 transition-transform duration-300 group-hover:scale-110" 
@@ -20,7 +20,7 @@ export default function EventSlide() {
             </div>
             <Link 
                 to="/" 
-                className="relative w-8 h-8 rounded-2xl flex justify-center items-center transition-transform duration-200 hover:scale-125 hover:rotate-12"
+                className="relative w-8 h-8 rounded-2xl flex justify-center items-center transition-transform duration-200 hover:scale-125"
             >
                 <img 
                     src={heart || "/placeholder.svg"} 
@@ -33,6 +33,6 @@ export default function EventSlide() {
                     alt="Liked"
                 />
             </Link>
-        </div>
+        </Link>
     );
 }
