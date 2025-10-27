@@ -15,9 +15,9 @@ export default function Homepage() {
       ];
     return (
         <>
-            <div className='mt-20 ml-40 mr-40'>
+            <div className='mt-10 ml-40 mr-40'>
                 <Top />
-                <SearchBar />
+                <SearchBar search='Events' />
                 <MainCategories />
                 <h1 className="text-3xl font-bold mb-10 mt-15">Next events</h1>
                 <ScrollableCarousel items={items.map((item) => <span>{item}</span>)} />
