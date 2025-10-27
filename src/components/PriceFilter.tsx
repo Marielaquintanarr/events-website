@@ -35,7 +35,7 @@ export default function PriceFilter() {
 
   return (
     <div className="relative">
-      <div className="flex gap-3 items-center mb-4">
+      <div className="flex gap-3 items-center">
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="flex items-center gap-2 bg-[#282827] w-30 h-10 justify-center text-white rounded-lg hover:bg-[#282827] transition-colors font-medium"
@@ -47,7 +47,7 @@ export default function PriceFilter() {
       </div>
 
       {isOpen && (
-        <div className="absolute z-50 top-full mt-2 bg-white rounded-lg border border-gray-200 p-6 space-y-4 shadow-lg">
+        <div className="absolute z-50 top-full bg-white rounded-lg border border-gray-200 p-6 space-y-4 shadow-lg">
           <div className="">
             <div>
               <label className="block text-sm font-medium text-gray-600 mb-2">Min</label>

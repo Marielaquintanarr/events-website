@@ -15,7 +15,7 @@ export default function Homepage() {
       ];
     return (
         <>
-            <div className='mt-10 ml-40 mr-40'>
+            <div className='mt-10 ml-10 mr-10'>
                 <Top />
                 <SearchBar search='Events' />
                 <MainCategories />

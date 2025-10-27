@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 interface ScrollableCarouselProps {
   items: React.ReactNode[];
@@ -56,14 +57,17 @@ const ScrollableCarousel: React.FC<ScrollableCarouselProps> = ({ items }) => {
       onTouchEnd={handleTouchEnd}
     >
       {items.map((item, index) => (
-        <div
-          key={index}
-          className="flex-shrink-0 w-60 h-40 bg-gray-500 rounded-lg shadow-md flex items-center justify-center"
-        >
-          {item}
-        </div>
+        <Link to="eventDetails">
+          <div
+            key={index}
+            className="flex-shrink-0 w-60 h-40 bg-gray-500 rounded-lg shadow-md flex items-center justify-center"
+          >
+            {item}
+          </div>
+        </Link>
       ))}
     </div>
+    
   );
 };
 

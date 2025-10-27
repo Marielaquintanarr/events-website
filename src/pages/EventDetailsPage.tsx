@@ -12,12 +12,12 @@ export default function EventDetailsPage() {
                 <Line />
                 <div className="flex mt-5 justify-between items-center">
                     <p className="font-thin">Invite friends</p>
-                    <div className="bg-[#202347] w-8 p-2 mr-1 rounded-[4px]"><img src={AddUser} /></div>
+                    <div className="bg-[#202347] w-8 p-2 mr-1 rounded-[4px] border-2 border-transparent hover:border-white hover:bg-transparent curosr-pointer"><img src={AddUser} /></div>
                 </div>
                 <Line />
                 <div className="flex mt-10 justify-between items-center mb-25">
                     <p className="text-2xl font-bold">$1500.0</p>
-                    <Link className="bg-[#202FF8] p-2 pl-4 pr-4 rounded-2xl" to="/">Buy Now</Link>
+                    <Link className="bg-[#202FF8] p-2 pl-4 pr-4 rounded-2xl border-2 border-transparent rounded-[15px] hover:bg-[#161616] hover:border-[#202FF8]" to="/">Buy Now</Link>
                 </div>
                 <Footer />
             </div>

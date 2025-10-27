@@ -16,7 +16,8 @@ export default function CategoryPage() {
                 <div className="flex mt-10 mb-5">
                     <DateFilter />
                     <PriceFilter />
-                </div>
+                    </div>
+
                 <CategoryCarousel items={items} />
                 <h1 className="text-3xl font-bold mb-10 mt-10">Events</h1>
                 <EventSlide />

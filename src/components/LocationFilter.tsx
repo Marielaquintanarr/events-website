@@ -2,20 +2,25 @@
 
 import { useState } from "react"
 import { ChevronDown } from "lucide-react"
+import LocationOnIcon from "@mui/icons-material/LocationOn"
 
-export default function LocationFilter() {
+export default function LocationFilter({ color }) {
   const [isOpen, setIsOpen] = useState(false)
-  const [selectedFilter, setSelectedFilter] = useState("Location")
+  const [selectedFilter, setSelectedFilter] = useState("Guadalajara")
 
   return (
     <div className="relative">
       <div className="flex gap-3 items-center mb-4">
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center gap-2 bg-[#282827] w-30 h-10 justify-center text-white rounded-lg hover:bg-[#282827] transition-colors font-medium"
+          style={{ backgroundColor: color }}
+          className="flex items-center gap-2 px-4 h-10 justify-center text-white rounded-lg transition-colors font-medium"
         >
+          <LocationOnIcon className="w-5 h-5 text-white align-middle" />
           <span>{selectedFilter}</span>
-          <ChevronDown className={`w-5 h-5 transition-transform ${isOpen ? "rotate-180" : ""}`} />
+          <ChevronDown
+            className={`w-5 h-5 text-white transition-transform ${isOpen ? "rotate-180" : ""}`}
+          />
         </button>
       </div>
 
@@ -24,8 +29,7 @@ export default function LocationFilter() {
           <div className="grid grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-medium text-gray-600 mb-2">Min</label>
-              <div className="relative">
-              </div>
+              <div className="relative"></div>
             </div>
           </div>
         </div>

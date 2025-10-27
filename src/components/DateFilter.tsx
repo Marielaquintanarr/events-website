@@ -17,11 +17,11 @@ export default function DateFilter() {
   }
 
   return (
-    <div className="w-full max-w-md">
-      <div className="flex gap-3 mb-4">
+    <div className="w-full max-w-md relative">
+      <div className="flex gap-3">
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center gap-2 bg-[#282827] text-white px-6 py-3 rounded-lg hover:bg-[#282827] transition-colors font-medium"
+          className="flex items-center justify-center  w-30 h-10 gap-2 bg-[#282827] text-white rounded-lg hover:bg-[#282827] transition-colors font-medium"
         >
           <Calendar className="w-5 h-5" />
           <span>{selectedFilter}</span>
@@ -30,7 +30,7 @@ export default function DateFilter() {
       </div>
 
       {isOpen && (
-        <div className="bg-white rounded-lg border border-gray-200 p-4 space-y-4">
+        <div className="absolute z-50 top-full bg-white rounded-lg border border-gray-200 p-4 space-y-4">
           <div className="grid grid-cols-2 gap-4">
             <div>
               <label className="text-sm text-gray-500 mb-2 block">From</label>

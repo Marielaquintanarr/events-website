@@ -13,7 +13,7 @@ export default function CalendarPage() {
                 <div className="flex gap-10 mt-5">
                     <EventFilter />
                     <PriceFilter />
-                    <LocationFilter />
+                    <LocationFilter color="#282827" />
                 </div>
                 <Calendar />
                 <Footer />

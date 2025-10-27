@@ -1,69 +1,30 @@
-import React, { useRef, useState } from "react";
+import chevron from "../assets/chevron_right.png";
+import { Link } from "react-router-dom";
 
-interface ScrollableCarouselProps {
-  items: React.ReactNode[];
-}
-
-const CategoryCarousel: React.FC<ScrollableCarouselProps> = ({ items }) => {
-  const carouselRef = useRef<HTMLDivElement>(null);
-  const [isDragging, setIsDragging] = useState(false);
-  const [startX, setStartX] = useState(0);
-  const [scrollLeft, setScrollLeft] = useState(0);
-
-  const handleMouseDown = (e: React.MouseEvent) => {
-    setIsDragging(true);
-    setStartX(e.pageX - (carouselRef.current?.offsetLeft || 0));
-    setScrollLeft(carouselRef.current?.scrollLeft || 0);
-  };
-
-  const handleMouseLeave = () => setIsDragging(false);
-  const handleMouseUp = () => setIsDragging(false);
-
-  const handleMouseMove = (e: React.MouseEvent) => {
-    if (!isDragging || !carouselRef.current) return;
-    e.preventDefault();
-    const x = e.pageX - carouselRef.current.offsetLeft;
-    const walk = (x - startX) * 2; 
-    carouselRef.current.scrollLeft = scrollLeft - walk;
-  };
-
-  const handleTouchStart = (e: React.TouchEvent) => {
-    setIsDragging(true);
-    setStartX(e.touches[0].pageX - (carouselRef.current?.offsetLeft || 0));
-    setScrollLeft(carouselRef.current?.scrollLeft || 0);
-  };
-
-  const handleTouchMove = (e: React.TouchEvent) => {
-    if (!isDragging || !carouselRef.current) return;
-    const x = e.touches[0].pageX - carouselRef.current.offsetLeft;
-    const walk = (x - startX) * 2;
-    carouselRef.current.scrollLeft = scrollLeft - walk;
-  };
-
-  const handleTouchEnd = () => setIsDragging(false);
+export default function MainCategories() {
+  const categories = ["Run", "Music", "Theater", "Nature", "Festive", "Food", "Art", "Sports"];
 
   return (
-    <div
-      ref={carouselRef}
-      className="flex overflow-x-auto scroll-smooth scrollbar-hide space-x-4 px-4 cursor-grab active:cursor-grabbing items-center justify-center"
-      onMouseDown={handleMouseDown}
-      onMouseMove={handleMouseMove}
-      onMouseUp={handleMouseUp}
-      onMouseLeave={handleMouseLeave}
-      onTouchStart={handleTouchStart}
-      onTouchMove={handleTouchMove}
-      onTouchEnd={handleTouchEnd}
-    >
-      {items.map((item, index) => (
-        <div
-          key={index}
-          className="flex-shrink-0 w-40 h-40 bg-gray-500 rounded-lg shadow-md flex items-center justify-center"
-        >
-          {item}
-        </div>
-      ))}
-    </div>
-  );
-};
+    <>
+      {/* Header */}
+      <div className="mt-15 flex justify-between items-center">
+        <h1 className="text-3xl font-bold mb-5">Categories</h1>
+      </div>
 
-export default CategoryCarousel;
+      {/* Carrusel */}
+      <div className="mb-10">
+        <div className="flex overflow-x-auto gap-4 pb-2 scroll-smooth scrollbar-hide">
+          {categories.map((cat) => (
+            <Link
+              key={cat}
+              to="/category"
+              className="flex-shrink-0 bg-[#202FF8] border-2 border-transparent px-6 py-2 rounded-[15px] hover:bg-[#161616] hover:border-[#202FF8] text-white transition-colors whitespace-nowrap"
+            >
+              {cat}
+            </Link>
+          ))}
+        </div>
+      </div>
+    </>
+  );
+}
