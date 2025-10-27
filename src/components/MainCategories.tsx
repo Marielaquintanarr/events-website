@@ -19,10 +19,6 @@ export default function MainCategories() {
                 <Link to="/category" className="bg-[#202FF8] border-2 border-transparent px-12 py-2 rounded-[15px] hover:bg-[#161616] hover:border-[#202FF8] text-white transition-colors">Nature</Link>
                 <Link to="/category" className="bg-[#202FF8] border-2 border-transparent px-12 py-2 rounded-[15px] hover:bg-[#161616] hover:border-[#202FF8] text-white transition-colors">Festive</Link>
                 <Link to="/category" className="bg-[#202FF8] border-2 border-transparent px-12 py-2 rounded-[15px] hover:bg-[#161616] hover:border-[#202FF8] text-white transition-colors">Food</Link>
-                <Link to="/category" className="bg-[#202FF8] border-2 border-transparent px-12 py-2 rounded-[15px] hover:bg-[#161616] hover:border-[#202FF8] text-white transition-colors">Food</Link>
-                <Link to="/category" className="bg-[#202FF8] border-2 border-transparent px-12 py-2 rounded-[15px] hover:bg-[#161616] hover:border-[#202FF8] text-white transition-colors">Food</Link>
-                <Link to="/category" className="bg-[#202FF8] border-2 border-transparent px-12 py-2 rounded-[15px] hover:bg-[#161616] hover:border-[#202FF8] text-white transition-colors">Food</Link>
-                <Link to="/category" className="bg-[#202FF8] border-2 border-transparent px-12 py-2 rounded-[15px] hover:bg-[#161616] hover:border-[#202FF8] text-white transition-colors">Food</Link>
             </div>
         </>
     )

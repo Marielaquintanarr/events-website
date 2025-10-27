@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import heart from "../assets/heart.png";
-import event from "../assets/event.png";
 import fillHeart from "../assets/fillHeart.png";
+import event from "../assets/event.png";
 
 export default function Card() {
     return (

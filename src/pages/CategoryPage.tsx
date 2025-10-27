@@ -5,13 +5,14 @@ import PriceFilter from "../components/PriceFilter";
 import CategoryCarousel from "../components/CategoryCarrousel";
 import EventSlide from "../components/EventSlide";
 import Footer from "../components/Footer";
+
 export default function CategoryPage() {
     const items = Array.from({ length: 6 }, (_, i) => `Item ${i + 1}`);
     return(
         <>
-            <div className='mt-20 ml-40 mr-40'>
+            <div className='mt-10 ml-10 mr-10'>
                 <Top />
-                <SearchBar />
+                <SearchBar search="Event" />
                 <div className="flex mt-10 mb-5">
                     <DateFilter />
                     <PriceFilter />

@@ -46,7 +46,7 @@ const ScrollableCarousel: React.FC<ScrollableCarouselProps> = ({ items }) => {
   return (
     <div
       ref={carouselRef}
-      className="flex overflow-x-auto scroll-smooth scrollbar-hide space-x-4 px-4 cursor-grab active:cursor-grabbing"
+      className="flex overflow-x-auto scroll-smooth scrollbar-hide space-x-4 px-4 cursor-grab active:cursor-grabbing items-center"
       onMouseDown={handleMouseDown}
       onMouseMove={handleMouseMove}
       onMouseUp={handleMouseUp}

@@ -34,11 +34,11 @@ export default function PriceFilter() {
   }
 
   return (
-    <div className="w-full max-w-md">
+    <div className="relative">
       <div className="flex gap-3 items-center mb-4">
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center gap-2 bg-[#282827] text-white px-6 py-3 rounded-lg hover:bg-[#282827] transition-colors font-medium"
+          className="flex items-center gap-2 bg-[#282827] w-30 h-10 justify-center text-white rounded-lg hover:bg-[#282827] transition-colors font-medium"
         >
           <DollarSign className="w-5 h-5" />
           <span>{selectedFilter}</span>
@@ -47,8 +47,8 @@ export default function PriceFilter() {
       </div>
 
       {isOpen && (
-        <div className="bg-white rounded-lg border border-gray-200 p-6 space-y-4">
-          <div className="grid grid-cols-2 gap-4">
+        <div className="absolute z-50 top-full mt-2 bg-white rounded-lg border border-gray-200 p-6 space-y-4 shadow-lg">
+          <div className="">
             <div>
               <label className="block text-sm font-medium text-gray-600 mb-2">Min</label>
               <div className="relative">

@@ -1,5 +1,10 @@
 
-export default function SearchBar() {
+type SearchBarProps = {
+    search: string;
+  };
+
+  
+export default function SearchBar( { search }: SearchBarProps) {
     return (
         <> 
         <form className="w-100% mt-10">   
@@ -10,7 +15,7 @@ export default function SearchBar() {
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
                     </svg>
                 </div>
-                <input type="search" id="default-search" className="block w-full p-4 ps-10 text-sm text-white rounded-3xl bg-[#282827]" placeholder="Search Events" required />
+                <input type="search" id="default-search" className="block w-full p-4 ps-10 text-sm text-white rounded-3xl bg-[#282827]" placeholder={`Search ${search}`} required />
             </div>
         </form>
 
