@@ -15,7 +15,7 @@ export default function Footer() {
                 <div className="bg-[#1E1E1E] w-25 h-25 rounded-full flex justify-center items-center -m-12">
                     <div className="bg-[#202FF8] hover:bg-white w-19 h-19 rounded-full flex justify-center items-center -m-10">
                     <Link 
-                        to="/myTickets" 
+                        to="/" 
                         className="relative w-8 h-8 rounded-2xl flex justify-center items-center"
                     >
                         <img 
@@ -31,8 +31,8 @@ export default function Footer() {
                     </Link>
                     </div>
                 </div>
-                <Link to="/"><img className="w-10 h-10" src={heart}/></Link>
-                <Link to="/"><img className="w-10 h-10" src={filter}/></Link>
+                <Link to="/favorites"><img className="w-10 h-10" src={heart}/></Link>
+                <Link to="/myTickets"><img className="w-10 h-10" src={filter}/></Link>
             </div>
         </>
     )

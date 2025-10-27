@@ -3,6 +3,7 @@ import Top from "../components/top";
 import PriceFilter from "../components/PriceFilter";
 import EventFilter from "../components/EventFilter";
 import LocationFilter from "../components/LocationFilter";
+import Footer from "../components/Footer";
 export default function CalendarPage() {
     return (
         <>
@@ -15,6 +16,7 @@ export default function CalendarPage() {
                     <LocationFilter />
                 </div>
                 <Calendar />
+                <Footer />
             </div>
         </>
     )

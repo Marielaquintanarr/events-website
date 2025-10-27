@@ -5,6 +5,7 @@ import CategoryPage from './pages/CategoryPage';
 import EventDetailsPage from './pages/EventDetailsPage';
 import MyTickets from './pages/MyTickets';
 import CalendarPage from './pages/CalendarPage';
+import FavoritesPage from './pages/FavoritesPage';
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
           <Route path="/eventDetails" element={<EventDetailsPage />} />
           <Route path="/myTickets" element={<MyTickets />} />
           <Route path="/calendar" element={<CalendarPage />} />
+          <Route path='/favorites' element={<FavoritesPage />} />
         </Routes>
       </Router>
     </>
