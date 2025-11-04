@@ -14,8 +14,8 @@ export default function EventSlide() {
                 />
                 <div>
                     <h1 className="font-bold text-2xl">Event Title</h1>
-                    <p className="font-thin text-sm">Fecha del evento</p>
-                    <p className="font-thin text-sm">Lugar del evento</p>
+                    <p className="font-thin text-sm">Event date</p>
+                    <p className="font-thin text-sm">Event location</p>
                 </div>
             </div>
             <Link 

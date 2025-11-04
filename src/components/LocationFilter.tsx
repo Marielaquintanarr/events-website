@@ -28,8 +28,12 @@ export default function LocationFilter({ color }) {
         <div className="absolute z-50 top-full mt-2 bg-white rounded-lg border border-gray-200 p-6 space-y-4 shadow-lg">
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm font-medium text-gray-600 mb-2">Min</label>
-              <div className="relative"></div>
+              <label className="block text-sm font-medium text-gray-600 mb-2">Guadalajara</label>
+              <label className="block text-sm font-medium text-gray-600 mb-2">Zapopan</label>
+              <label className="block text-sm font-medium text-gray-600 mb-2">Tlajomulco</label>
+              <label className="block text-sm font-medium text-gray-600 mb-2">Chapala</label>
+              <label className="block text-sm font-medium text-gray-600 mb-2">Mazamitla</label>
+              <label className="block text-sm font-medium text-gray-600 mb-2">Tapalpa</label>
             </div>
           </div>
         </div>

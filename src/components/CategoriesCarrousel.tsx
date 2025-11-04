@@ -1,29 +1,11 @@
 import React, { useRef, useState } from "react";
-import EventCard from "./EventCard";
-import kpop from "../assets/kpop3.webp";
-import mariachi from "../assets/mariachi3.jpg";
-import ozuna from"../assets/ozuna.webp";
-import maraton from "../assets/maraton.jpeg";
-import cycling from "../assets/cycling.jpg";
-import club from "../assets/club.jpeg";
-import lucha from "../assets/lucha.jpg";
-import muertos from "../assets/muertos.jpg";
-import feria from "../assets/feria2.jpeg";
+import { Link } from "react-router-dom";
 
-const events = [
-    {name: "Kpop Concert", image: kpop, price: "$2,500.00", date: "Oct 13"},
-    {name: "Mariachi Concert", image: mariachi, price: "$3,000.00", date: "Sep 13"},
-    {name: "Ozuna Concert", image: ozuna, price: "42,500.00", date: "Feb 27"},
-    {name: "Maraton Zapopan", image: maraton, price: "$800.00", date: "Nov 03"},
-    {name: "Vía Recreativa Nocturna", image: cycling, price: "$0.00", date: "Domingos"},
-    {name: "The Normal", image: club, price: "$200.00", date: "Jue-Sab"},
-    {name: "Martes de Glamour", image: lucha, price: "$250.00", date: "Martes"},
-    {name: "Calaverandía", image: muertos, price: "$800.00", date: "Lun-Dom"},
-    {name: "Fiestas de Octubre", image: feria, price: "$1300.00", date: "Vie-Dom"},
+interface ScrollableCarouselProps {
+  items: React.ReactNode[];
+}
 
-];
-
-const ScrollableCarousel = ({  }) => {
+const CategoriesCarrousel: React.FC<ScrollableCarouselProps> = ({ items }) => {
   const carouselRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
@@ -74,20 +56,19 @@ const ScrollableCarousel = ({  }) => {
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
     >
-      <EventCard items={events} />
-      {/* {items.map((item, index) => (
-        <Link to="eventDetails">
+      {items.map((item, index) => (
+        <Link to="category">
           <div
             key={index}
-            className="flex-shrink-0 w-60 h-40 bg-gray-500 rounded-lg shadow-md flex items-center justify-center"
+            className="flex-shrink-0 w-50 h-15 bg-[#202FF8] hover:bg-[transparent] border-2 border-transparent hover:border-[#202FF8] rounded-3xl shadow-md flex items-center justify-center"
           >
             {item}
           </div>
         </Link>
-      ))} */}
+      ))}
     </div>
     
   );
 };
 
-export default ScrollableCarousel;
+export default CategoriesCarrousel;

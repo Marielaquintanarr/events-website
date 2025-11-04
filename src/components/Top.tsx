@@ -9,7 +9,7 @@ export default function Top() {
                     <p className="text-sm font-thin">Your Location</p>
                     <LocationFilter color="transparent" />
                 </div>
-                <img src={user} />
+                <img className="w-10 h-10" src={user} />
             </div>
 
         </>

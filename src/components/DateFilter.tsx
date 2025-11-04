@@ -17,7 +17,7 @@ export default function DateFilter() {
   }
 
   return (
-    <div className="w-full max-w-md relative">
+    <div className="relative">
       <div className="flex gap-3">
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -30,8 +30,8 @@ export default function DateFilter() {
       </div>
 
       {isOpen && (
-        <div className="absolute z-50 top-full bg-white rounded-lg border border-gray-200 p-4 space-y-4">
-          <div className="grid grid-cols-2 gap-4">
+        <div className="absolute z-50 top-full bg-white rounded-lg border border-gray-200 space-y-4">
+          <div className="">
             <div>
               <label className="text-sm text-gray-500 mb-2 block">From</label>
               <div className="flex items-center gap-2 border border-gray-200 rounded-lg px-3 py-2">

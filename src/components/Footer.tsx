@@ -10,13 +10,13 @@ export default function Footer() {
     return (
         <>
             <div className="fixed bottom-0 left-0 w-full z-50 bg-[#1E1E1E] flex justify-evenly p-4">
-                <Link to="/"><img className="w-10 h-10" src={users}/></Link>
-                <Link to="/calendar"><img className="w-10 h-10" src={calendar}/></Link>
+                <Link to="/"><img className="w-7 h-7" src={users}/></Link>
+                <Link to="/calendar"><img className="w-7 h-7" src={calendar}/></Link>
                 <div className="bg-[#1E1E1E] w-25 h-25 rounded-full flex justify-center items-center -m-12">
                     <div className="bg-[#202FF8] hover:bg-white w-19 h-19 rounded-full flex justify-center items-center -m-10">
                     <Link 
                         to="/" 
-                        className="relative w-8 h-8 rounded-2xl flex justify-center items-center"
+                        className="relative w-7 h-7 rounded-2xl flex justify-center items-center"
                     >
                         <img 
                             src={home || "/placeholder.svg"} 
@@ -31,8 +31,8 @@ export default function Footer() {
                     </Link>
                     </div>
                 </div>
-                <Link to="/favorites"><img className="w-10 h-10" src={heart}/></Link>
-                <Link to="/myTickets"><img className="w-10 h-10" src={filter}/></Link>
+                <Link to="/favorites"><img className="w-7 h-7" src={heart}/></Link>
+                <Link to="/myTickets"><img className="w-7 h-7" src={filter}/></Link>
             </div>
         </>
     )
